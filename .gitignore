@@ -1,0 +1,5 @@
+.venv/
+original_model/
+tf_server_deployment_model/
+data/
+.gitattributes

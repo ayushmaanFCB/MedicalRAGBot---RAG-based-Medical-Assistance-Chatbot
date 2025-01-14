@@ -1,0 +1,6 @@
+tensorflow
+tf-keras
+sentence-transformers
+faiss-cpu
+flask 
+numpy
