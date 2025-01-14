@@ -3,7 +3,7 @@ import numpy as np
 import json
 
 # Load the saved FAISS index
-index = faiss.read_index("faiss_index.bin")
+index = faiss.read_index("data/FAISS/faiss_index.bin")
 
 
 # Encode the question to get its embedding

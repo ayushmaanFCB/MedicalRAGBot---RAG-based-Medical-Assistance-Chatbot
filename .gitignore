@@ -3,3 +3,5 @@ original_model/
 tf_server_deployment_model/
 data/
 .gitattributes
+**/tempCodeRunner*
+**/__pycache__/
