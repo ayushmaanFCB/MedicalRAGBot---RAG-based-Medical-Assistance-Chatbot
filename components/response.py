@@ -7,7 +7,7 @@ index = faiss.read_index("faiss_index.bin")
 
 
 # Encode the question to get its embedding
-def embed_question(question, retriver_model):
+def embed_question(question, retriever_model):
     question_embedding = retriever_model.encode(question, convert_to_tensor=True)
     return question_embedding.cpu().numpy()
 
