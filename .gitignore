@@ -1,6 +1,6 @@
 .venv/
 original_model/
-tf_server_deployment_model/
+saved_model/
 data/
 .gitattributes
 **/tempCodeRunner*
