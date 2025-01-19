@@ -101,6 +101,10 @@ def generate_response(question, retrieved_context):
                 print("Generated Responses:")
                 for idx, response in enumerate(all_responses):
                     print(f"Response {idx + 1}: {response}")
+
+                # Return the best response (the one with the highest logit)
+                best_response = all_responses[0]
+                return best_response
             else:
                 raise ValueError("Expected 'logits' key not found in predictions.")
     else:
@@ -119,7 +123,10 @@ def rag_pipeline(question, corpus, k=3):
 
     print(f"Retrieved Context: {retrieved_context}")
 
-    generate_response(question=question, retrieved_context=retrieved_context)
+    best_response = generate_response(
+        question=question, retrieved_context=retrieved_context
+    )
+    return best_response
 
 
 if __name__ == "__main__":
